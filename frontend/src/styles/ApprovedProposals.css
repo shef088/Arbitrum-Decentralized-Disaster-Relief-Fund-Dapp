@@ -1,0 +1,151 @@
+/* styles/ApprovedProposals.css */
+
+.proposals-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 8rem;
+}
+.proposals-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.proposals-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.error-message {
+  color: red;
+}
+
+.inner-proposal {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.inner-proposal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.proposal-title {
+  font-size: 1.4rem;
+  color: #007bff;
+  margin: 0 0 10px;
+  transition: color 0.2s;
+}
+
+.proposal-title:hover {
+  color: #0056b3;
+}
+
+.proposal-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.proposal-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.proposal-details span {
+  display: inline-block;
+  background: #e9f5ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.advanced-ops-container{
+  margin-top: 9em;
+}
+
+  .adv-button{
+  background-color: #ffc107; /* Button background color */
+  color: #212529; /* Button text color */
+  font-size: 1rem;
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for button */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+/* Styles for the search bar container */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the input field */
+.search-bar input {
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Input field focus state */
+.search-bar input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Styles for the search button */
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Search button hover state */
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Search button disabled state */
+.search-bar button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

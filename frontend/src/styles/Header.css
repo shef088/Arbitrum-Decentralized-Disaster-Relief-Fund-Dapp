@@ -1,0 +1,121 @@
+/* Main Header Styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #1e3a8a; 
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+.header.visible {
+  transform: translateY(0);
+}
+
+/* Title and Connect Button Box */
+.header-box {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space between the title and the button */
+  align-items: center; /* Center the items vertically */
+  padding: 1rem;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+.navigation a svg {
+  margin-right: 0.2rem;  
+}
+/* Connect Button */
+.connect-btn {
+  margin-left: auto;
+}
+
+/* Main Navigation */
+.navigation {
+  display: flex;
+  gap: 1.3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: #1e3a8a;
+  color: black;
+  border: 2px solid white;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease;
+  padding: 0.1rem;
+}
+
+/* Second Navigation (visible only on small screens) */
+.navigation-second {
+  display: none; /* Initially hidden on large screens */
+}
+
+ 
+.navigation a:hover {
+  color: #a3bffa;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none; /* Hidden by default on large screens */
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.3em;
+  }
+  .hamburger {
+    display: block; /* Show hamburger on small screens */
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: none; /* Hide main navigation on small screens */
+  }
+
+  .navigation-second {
+    display: flex; /* Show second navigation on small screens */
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: #1e3a8a;
+  
+  }
+  .navigation-second a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+  }
+}

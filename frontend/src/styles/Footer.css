@@ -1,0 +1,26 @@
+/* styles/Footer.css */
+.footer {
+    padding: 20px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    text-align: center;
+    border-top: 2px solid #ffd700;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    color: #bbbbbb;
+}
+
+.footer p a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer p a:hover {
+    color: #e6c200;
+}

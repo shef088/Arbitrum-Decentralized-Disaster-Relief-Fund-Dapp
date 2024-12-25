@@ -1,0 +1,66 @@
+.create-proposal-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 7rem;
+}
+
+.create-proposal-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.create-proposal-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.create-proposal-container input[type="text"],
+.create-proposal-container textarea,
+.create-proposal-container input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.create-proposal-container input[type="text"]:focus,
+.create-proposal-container textarea:focus,
+.create-proposal-container input[type="datetime-local"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.create-proposal-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-proposal-container button:hover {
+  background-color: #0056b3;
+}
+
+.create-proposal-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.create-proposal-container p {
+  color: #555;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,27 @@
+/* Loader.css */
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: 9999; /* Ensure it stays above other content */
+}
+
+.loader {
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Light gray border */
+    border-top: 8px solid #1e3a8a; /* Blue border */
+    border-radius: 50%; /* Circular shape */
+    width: 60px; /* Loader width */
+    height: 60px; /* Loader height */
+    animation: spin 1s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

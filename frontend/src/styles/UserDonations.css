@@ -1,0 +1,101 @@
+/* styles/UserDonations.css */
+
+.user-donations-container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding around the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 9rem;
+}
+
+.user-donations-container  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+.user-donations-container h2{
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+.user-donations-container  .no-donations {
+    text-align: center; /* Center no donations message */
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #666; /* Gray color for less emphasis */
+}
+
+.user-donations-container .donation-list {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Space between items */
+}
+
+.user-donations-container .donation-item {
+    background-color: #fff; /* White background for each donation */
+    padding: 15px; /* Padding around each donation item */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.2s; /* Smooth transform effect */
+    text-decoration: none; /* Remove underline from links */
+    color: #0070f3; /* Link color */
+}
+
+.user-donations-container .donation-item:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+    background-color: #e6f7ff; /* Light blue background on hover */
+}
+
+.user-donations-container  .donation-item p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+ 
+
+  /*  */
+   
+  .funds-overview {
+    padding: 10px;
+    max-width: 600px; /* Limiting width for better readability */
+    margin: 0 auto; /* Center the table */
+  }
+  
+  .funds-overview table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em; /* Smaller font size */
+  }
+  
+  .funds-overview th,   .funds-overview td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light border for rows */
+  }
+  
+  .funds-overview th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .funds-overview td {
+    text-align: left;
+  }
+  
+  .funds-overview td:first-child {
+    text-align: left; /* Left-align labels */
+  }
+  
+  .funds-overview td:nth-child(2), td:nth-child(3) {
+    color: #333;
+  }
+  
+  .funds-overview td:nth-child(3) {
+    color: #4CAF50; /* Green for USD values */
+  }
+  

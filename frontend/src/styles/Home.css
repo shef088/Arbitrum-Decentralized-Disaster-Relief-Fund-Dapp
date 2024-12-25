@@ -1,0 +1,105 @@
+.home-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.3)), url('/images/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.home-hero {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 30px rgba(163, 47, 47, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.home-hero:hover {
+    transform: scale(1.02);
+}
+
+.home-hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease forwards;
+    color: bisque;
+}
+
+.home-hero-subtitle {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    animation: fadeIn 0.7s ease forwards;
+}
+
+.home-hero-description {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    animation: fadeIn 0.9s ease forwards;
+}
+
+.home-hero-action {
+    margin-top: 20px;
+}
+.home-hero-action h2{
+    color: bisque;
+}
+
+.home-welcome-msg, .home-connect-section {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: slideIn 1s ease forwards;
+    color: black;
+    
+}
+ 
+
+.home-note {
+    font-style: italic;
+    margin-top: 10px;
+    color:black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-hero-title {
+        font-size: 2.5rem;
+    }
+    .home-hero-subtitle, .home-hero-description {
+        font-size: 1rem;
+    }
+    .home-welcome-msg h2, .home-connect-section h2 {
+        font-size: 2rem;
+    }
+}
